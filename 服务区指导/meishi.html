@@ -1,147 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8" />-->
-       <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8">
-        <title></title>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/><strong></strong>
+		<!--jQuery文件务必在bootstrap.min.js之前引入-->
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<!--再引入bootstrap.min.js-->
+		<script src="bootstrap/js/bootstrap.js"></script>
+        
 		
-        <style type="text/css">
-            *{
-                
-                margin: 0 auto;
-                padding: 0;
-                
-            }
-            body{
-                background-image: url(img/body-bg.jpg);
-            }
-            .main{
-                width: 100%;
-            }
-            .nav{
-
-                color: rgb(8, 253, 249);
-                height: 40px;
-                line-height: 40px;
-                margin-top: 20px;
-            }
-            .nav ul{
-                list-style: none;
-                height: 40px;
-                background-color: #0bf5f9;
-                border-radius: 10px;
-                
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            
-            .nav ul li{
-                float:left;
-                margin-right: 20px;
-                
-            }
-            img{
-                margin-top: 30px;
-            }
-            .sli{
-                float:right;
-            }
-            .content{
-                background-color: white;
-                
-            }
-            .content_left{
-                float:left;
-                padding-top: 40px;
-                padding-left: 36px;
-                padding-right: 36px;
-                padding-bottom: 36px;
-                border-radius: 10px;
-                margin-top: 20px;
-                width: 60%;
-                background-color: white;
-            }
-            .content_right{
-                border-radius: 10px;
-                margin-top: 20px;
-                float:right;
-                width: 20%;
-            }
-            .content_right ol{
-                border-radius: 10px;
-                background-color: white;
-                list-style: none;
-                padding: 10px 20px 10px 20px ;
-                
-            }
-            .content_right ol li{
-                border-bottom: 1px solid gainsboro;
-                height: 40px;
-                line-height: 40px;
-                
-            }
-            .slide_bottom{
-                border-radius: 10px;
-                background-color: white;
-                margin-top: 20px;
-                height: 40px;
-                line-height: 40px;
-                padding-left: 15px;
-            }
-            .search{
-                width: 137px;
-                height: 15px;
-                padding: 5px;
-            }
-            .nav_pic{
-                display: none;
-            }
-            @media screen and (max-width: 780px) {
-                ul .word {
-                    display: none; /*隐藏控件*/
-                }
-                .nav_pic{
-                    display:inline ;
-                }
-                .content_right{
-                    width: 100%;
-                    float: left;
-                }
-                .content_left{
-                    width: 100%;
-                }
-                
-            }
-        </style>
-    </head>
+	</head>
     <body>
-				
-			<div class="container">
-				<div class="row clearfix">
-					<div class="col-md-12 column">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/><strong></strong>
+		<div class="container-fluid">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default " role="navigation">
+						<div class="navbar-header">
+							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="fuwuquzhidao.html">首页</a>
+						</div>
 						
-						<div class="main">
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">								
+							<ul class="nav navbar-nav">
 								<li class="active">
-									<a href="fuwuquzhidao.html" >回到导航页</a>						 						
+									 <a href="meishi.html">美食合集</a>
+								</li>								
+								<li class="active">
+									 <a href="kuaidi.html">快递站点</a>
+								</li>
+								<li class="active">
+									 <a href="tebiefuwu.html">特别服务</a>
 								</li>
 							</ul>
-					        
-						    </div>
 							
-						<div class="content">
+							<ul class="nav navbar-nav navbar-right">
+								<li >
+									 <a href="index.html">登出<strong class="caret"></strong></a>									
+								</li>
+							</ul>
+						</div>
+						
+					</nav>
+
+						<div class="nav nav-pills col-md-5">
 							<div class="content_left">
 						        <h3>舌尖上的交大</h3>						       
 						       
 						      <br/>
-						        <video src="img/001.mp4" controls="controls" width="100%"></video>
+						        <video src="img/001.mp4" controls="controls" width="150%"></video>
 						        
 						    </div>
 						<div class="content_right">
 							<h2>视频专区</h2>
-							<ul>										 						
+							<ul class="nav nav-pills col-lg-offset-5">
+                                										 						
 								 <li class="active">
 									 <a href="https://v.qq.com/" target="_blank">腾讯视频</a>
 								 </li>								
